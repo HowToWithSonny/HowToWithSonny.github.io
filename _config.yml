@@ -1,11 +1,9 @@
-# _config.yml
-title: My Awesome Blog
-description: Welcome to my awesome blog powered by Jekyll!
-theme: jekyll-theme-slate  # 你可以更改为你选择的主题
-
-# _config.yml
-title: My Awesome Blog
-description: Welcome to my awesome blog powered by Jekyll!
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
-  - jekyll-remote-theme
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+title: [How to do with Sonny]
+description: [It's me defying gravity]
+
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
