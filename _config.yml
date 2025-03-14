@@ -1,16 +1,10 @@
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme  # 启用 GitHub Pages 主题插件
 
-title: "How to with Sonny"
+title: "How to do with Sonny"
 description: "It's me defying gravity"
+show_downloads: false
 
-permalink: /:year/:month/:day/:title/
-timezone: Asia/Shanghai  # 你的时区
-
-plugins: 
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap 
   
 
