@@ -5,3 +5,12 @@ plugins:
 title: "How to with Sonny"
 description: "It's me defying gravity"
 
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai  # 你的时区
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
