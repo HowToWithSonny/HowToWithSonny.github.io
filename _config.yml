@@ -11,5 +11,6 @@ timezone: Asia/Shanghai  # 你的时区
 plugins: 
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-sitemap 
+  
 
