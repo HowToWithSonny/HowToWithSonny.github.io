@@ -9,7 +9,6 @@ permalink: /:year/:month/:day/:title/
 timezone: Asia/Shanghai  # 你的时区
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
