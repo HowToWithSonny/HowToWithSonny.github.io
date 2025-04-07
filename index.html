@@ -45,6 +45,19 @@
       50% { transform: translateY(-6px); }
       100% { transform: translateY(0); }
     }
+    .floating-sun {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  width: 60px;
+  opacity: 0.5;
+  animation: spin 10s linear infinite;
+  z-index: 999;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
   </style>
 </head>
 <body>
