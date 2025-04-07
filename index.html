@@ -30,6 +30,21 @@
     nav a:hover {
       text-decoration: underline;
     }
+    /* Decorative floating daisy */
+    .floating-daisy {
+      position: fixed;
+      bottom: 1.5em;
+      left: 1.5em;
+      width: 60px;
+      opacity: 0.5;
+      animation: float 3s ease-in-out infinite;
+      z-index: 999;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -75,10 +90,8 @@
   <footer>
     <p>🌈 Made with love by Sonny</p>
   </footer>
+
+  <!-- Floating daisy element -->
+  <img src="assets/icons/daisy.png" alt="daisy" class="floating-daisy">
 </body>
 </html>
-
-  </footer>
-</body>
-</html>
-
