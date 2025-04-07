@@ -1,0 +1,71 @@
+/* assets/css/style.css */
+:root {
+  --pink: #ff218c;
+  --yellow: #ffd800;
+  --blue: #21b1ff;
+  --bg: #fffafc;
+  --text: #222222;
+  --subtext: #666666;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1em;
+}
+
+header {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+
+h1 {
+  color: var(--pink);
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  color: var(--pink);
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+p {
+  color: var(--subtext);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: var(--yellow);
+}
+
+.card {
+  background-color: white;
+  border: 2px solid var(--pink);
+  border-radius: 12px;
+  padding: 1.2em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin: 1.5em auto;
+  max-width: 700px;
+}
+
+footer {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.8em;
+  margin-top: 3em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
