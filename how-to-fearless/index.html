@@ -5,17 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fearless - How to with Sonny</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    body {
+      font-family: 'Playfair Display', 'Noto Serif SC', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffdf7;
+    }
+    .fearless-header {
+      background: linear-gradient(to right, #fff8dc, #ffe4b5);
+      padding: 4em 1em;
+      text-align: center;
+      border-bottom: 2px solid #f7d794;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+      position: relative;
+    }
+    .fearless-header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #d9822b;
+      text-shadow: 1px 1px 3px rgba(255, 165, 0, 0.3);
+      margin-bottom: 0.5em;
+    }
+    .fearless-header p {
+      font-size: 1.3em;
+      color: #8a4f1d;
+      font-style: italic;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.1); }
+    }
+    .fearless-header::after {
+      content: '✨';
+      position: absolute;
+      top: 1.2em;
+      right: 1.5em;
+      font-size: 2em;
+      animation: twinkle 2.5s infinite ease-in-out;
+    }
+    .card {
+      margin: 2em auto;
+      padding: 1.5em;
+      max-width: 800px;
+      background: #ffffff;
+      border: 1px solid #f0e6d2;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      margin: 3em auto 1em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Fearless Era</h1>
-    <p>In this section, I share my experiences and insights about overcoming fear and embracing new challenges. Whether it’s learning programming, mathematics, or confronting personal obstacles, Fearless is all about taking that first step.</p>
-  </header>
+  <section class="fearless-header">
+    <h1>🌞 Fearless</h1>
+    <p>Embracing challenges with soft hands and a brave heart.</p>
+  </section>
 
   <main>
-    <!-- 目录部分 -->
     <section class="card">
-      <h2>Table of Contents</h2>
+      <h2>📚 Table of Contents</h2>
       <nav>
         <ul>
           <li><a href="#article1">Learning to Code</a></li>
@@ -24,3 +77,25 @@
         </ul>
       </nav>
     </section>
+
+    <section class="card" id="article1">
+      <h3>Learning to Code</h3>
+      <p>Learning to code from scratch was challenging but rewarding. Here’s how I started and my journey to becoming more confident in programming.</p>
+    </section>
+
+    <section class="card" id="article2">
+      <h3>Overcoming Study Anxiety</h3>
+      <p>Study anxiety can hinder progress. In this article, I talk about how I dealt with it and how you can too!</p>
+    </section>
+
+    <section class="card" id="article3">
+      <h3>Building Confidence in Math</h3>
+      <p>Math was never my strong suit, but I managed to tackle it by breaking things down into small steps. Here's what worked for me!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌈 Made with love by Sonny</p>
+  </footer>
+</body>
+</html>
