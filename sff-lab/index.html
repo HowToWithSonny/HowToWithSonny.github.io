@@ -3,7 +3,10 @@ layout: default
 title: SFF Semantic Analysis Lab
 ---
 
-<div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: 'Times New Roman', serif;">
     <h1>🎬 SFF Semantic Analysis Laboratory</h1>
     <p><i>Computational Modeling for Movie Festival Recommendation and Scheduling</i></p>
 
@@ -11,14 +14,14 @@ title: SFF Semantic Analysis Lab
 
     <h3>1. Project Overview</h3>
     <p>
-        This laboratory demonstrates how to resolve the "Information Overload" and "Cold Start" problems during the 27th Shanghai International Film Festival. 
-        As a Mathematics and Applied Mathematics student, I developed this system to bridge the gap between abstract cinematic content and practical decision-making using high-dimensional vector spaces.
+        This laboratory demonstrates a computational approach to resolving the "Information Overload" and "Cold Start" problems encountered during the 27th Shanghai International Film Festival. 
+        As a <b>Mathematics and Applied Mathematics</b> student, I developed this system to bridge the gap between abstract cinematic content and practical decision-making using high-dimensional vector spaces.
     </p>
 
     <h3>2. Interactive Lab (Live Demo)</h3>
-    <p>Enter a movie title (e.g., <i>Blue Velvet</i> or <i>Pride and Prejudice</i>) below to see the semantic analysis in real-time.</p>
+    <p>Enter a movie title (e.g., <i>The Grandmaster</i> or <i>Inception</i>) below to see the semantic analysis in real-time. The system will retrieve the most semantically relevant films from the dataset.</p>
     
-    <div style="margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #f9f9f9;">
+    <div style="margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <iframe
             src="https://huggingface.co/embed/howtowithsonny/sff-smart-scheduler/+"
             frameborder="0"
@@ -29,15 +32,27 @@ title: SFF Semantic Analysis Lab
 
     <h3>3. Mathematical Methodology</h3>
     <p>
-        The system maps film synopses into a <b>384-dimensional vector space</b> using <b>Sentence-BERT (S-BERT)</b>. 
-        Similarity is calculated via <b>Cosine Distance</b>, measuring the angular proximity between concepts:
+        The core of this system involves mapping unstructured film synopses into a <b>384-dimensional vector space</b>. I utilized <b>Sentence-BERT (S-BERT)</b>, specifically the <i>all-MiniLM-L6-v2</i> transformer, to perform this feature extraction. 
     </p>
-    <div style="text-align: center; font-size: 1.2em; margin: 20px 0;">
+
+    <p>
+        Once the text is vectorized, the similarity between films is quantified using <b>Cosine Similarity</b>. This measures the angular proximity between two vectors in the 384-dimensional manifold, rather than mere keyword overlap:
+    </p>
+
+    <div style="text-align: center; font-size: 1.3em; margin: 30px 0; padding: 20px; background: #fdfdfd; border-radius: 10px;">
         $$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
     </div>
 
+    <p>
+        This methodology ensures that recommendations are based on deep semantic context, allowing for a more nuanced understanding of film themes and genres.
+    </p>
+
     <h3>4. Resources</h3>
     <ul>
+        <li><a href="https://github.com/howtowithsonny/sff-smart-scheduler" target="_blank">📂 View Source Code on GitHub</a></li>
+        <li><a href="/">🏠 Back to Homepage</a></li>
+    </ul>
+</div>
         <li><a href="https://github.com/howtowithsonny/sff-smart-scheduler" target="_blank">📂 View Source Code on GitHub</a></li>
         <li><a href="/">🏠 Back to Homepage</a></li>
     </ul>
