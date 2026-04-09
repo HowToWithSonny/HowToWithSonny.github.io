@@ -1,0 +1,44 @@
+---
+layout: default
+title: SFF Semantic Analysis Lab
+---
+
+<div style="max-width: 900px; margin: 0 auto; padding: 20px;">
+    <h1>🎬 SFF Semantic Analysis Laboratory</h1>
+    <p><i>Computational Modeling for Movie Festival Recommendation and Scheduling</i></p>
+
+    <hr>
+
+    <h3>1. Project Overview</h3>
+    <p>
+        This laboratory demonstrates how to resolve the "Information Overload" and "Cold Start" problems during the 27th Shanghai International Film Festival. 
+        As a <b>Mathematics and Applied Mathematics</b> student, I developed this system to bridge the gap between abstract cinematic content and practical decision-making using high-dimensional vector spaces.
+    </p>
+
+    <h3>2. Interactive Lab (Live Demo)</h3>
+    <p>Enter a movie title (e.g., <i>Inception</i> or <i>The Grandmaster</i>) below to see the semantic analysis in real-time.</p>
+    
+    <div style="margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #f9f9f9;">
+        <iframe
+            src="https://huggingface.co/embed/howtowithsonny/sff-smart-scheduler/+"
+            frameborder="0"
+            width="100%"
+            height="700px"
+        ></iframe>
+    </div>
+
+    <h3>3. Mathematical Methodology</h3>
+    <p>
+        The system maps film synopses into a <b>384-dimensional vector space</b> using <b>Sentence-BERT (S-BERT)</b>. 
+        Similarity is calculated via <b>Cosine Distance</b>, measuring the angular proximity between concepts:
+    </p>
+    <div style="text-align: center; font-size: 1.2em; margin: 20px 0;">
+        $$\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$$
+    </div>
+
+    <h3>4. Resources</h3>
+    <ul>
+        <li><a href="https://github.com/howtowithsonny/sff-smart-scheduler" target="_blank">📂 View Source Code on GitHub</a></li>
+        <li><a href="/">🏠 Back to Homepage</a></li>
+    </ul>
+</div>
